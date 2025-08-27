@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>23133060-Phạm Minh Quân</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/survey.css">
+</head>
+<body>
+    <main class="survey-container">
+        <header>
+            <img src="images/murachlogo.jpg" alt="Murach Logo"> <h1>Survey-23133060</h1>
+            <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+        </header>
+        
+        <form action="survey" method="post">
+            <fieldset>
+                <legend>Your information</legend>
+
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" id="birthDate" name="birthDate"> </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="hear-search" name="heardFrom" value="Search Engine" checked>
+                        <label for="hear-search">Search engine</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hear-mouth" name="heardFrom" value="Word of mouth">
+                        <label for="hear-mouth">Word of mouth</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hear-social" name="heardFrom" value="Social Media">
+                        <label for="hear-social">Social Media</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hear-other" name="heardFrom" value="Other">
+                        <label for="hear-other">Other</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Would you like to receive announcements about new CDs and special offers?</legend>
+                 <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="wantsUpdates" name="wantsUpdates">
+                        <label for="wantsUpdates">YES, I'd like that.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="emailOK" name="emailOK" value="Yes">
+                        <label for="emailOK">YES, please send me email announcements.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="contactVia">Please contact me by:</label>
+                <select id="contactVia" name="contactVia">
+                    <option value="Both" selected>Email or postal mail</option>
+                    <option value="Email">Email only</option>
+                    <option value="Postal Mail">Postal mail only</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                 <input type="submit" value="Submit Survey">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
