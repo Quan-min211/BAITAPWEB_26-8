@@ -24,9 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Copy index.html to _site
-        run: |
-          mkdir -p _site
-          cp web/index.html _site/index.html
+          run: |
+            mkdir -p _site
+            cp -r web/* _site/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
